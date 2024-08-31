@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery & Menu</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .gallery {
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery .col-md-4 {
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 2rem;
+            text-align: center;
+            color: #343a40;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header style="background-color: black; color: white; padding: 10px; display: flex; align-items: center;">
+        <div style="font-size: 24px; font-weight: bold; margin-right: auto;">Chef24X7</div>
+        <nav>
+            <ul style="list-style-type: none; margin: 0; padding: 0; display: flex;">
+                <li style="display: inline;">
+                    <a href="index.html" style="color: white; text-decoration: none; padding: 10px;">Home</a>
+                </li>
+                <li style="display: inline;">
+                    <a href="about.html" style="color: white; text-decoration: none; padding: 10px;">About Us</a>
+                </li>
+                <li style="display: inline;">
+                    <a href="gallery.html" style="color: white; text-decoration: none; padding: 10px;">Gallery</a>
+                </li>
+                <li style="display: inline;">
+                    <a href="menu.html" style="color: white; text-decoration: none; padding: 10px;">Menu</a>
+                </li>
+                <li style="display: inline;">
+                    <a href="contact.html" style="color: white; text-decoration: none; padding: 10px;">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Gallery Section -->
+        <h2>Gallery</h2>
+        <div class="gallery row">
+            <div class="col-md-4 mb-4">
+                <img src="images/foods/image1.jpg" alt="Dish 1">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="images/foods/image2.jpg" alt="Dish 2">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="images/foods/image3.jpg" alt="Dish 3">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="images/foods/image4.jpg" alt="Dish 4">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="images/foods/image5.jpg" alt="Dish 5">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="images/foods/image6.jpg" alt="Dish 6">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="images/foods/image7.jpg" alt="Dish 7">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="images/foods/image8.jpg" alt="Dish 8">
+            </div>
+            
+        </div>
+    </main>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

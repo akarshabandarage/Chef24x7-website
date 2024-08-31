@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+       
+        .hero {
+            background-image: url('images/cover1.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .feature-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-card img {
+            border-radius: 10px 10px 0 0;
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+        }
+
+        .testimonial-section, .services-section {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+
+        .testimonial-card, .service-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .testimonial-card img, .service-card img {
+            border-radius: 10px;
+            width: 120px; /* Fixed width */
+            height: 120px; /* Fixed height */
+            object-fit: cover; /* Maintain aspect ratio */
+            margin-bottom: 15px;
+        }
+
+        .testimonial-section h2, .services-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .service-card img {
+            width: 100%; /* Responsive width */
+            height: 150px; /* Fixed height */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header style="background-color: black; color: white; padding: 10px; display: flex; align-items: center;">
+        <div style="font-size: 24px; font-weight: bold; margin-right: auto;">Chef24X7</div>
+        <nav>
+            <ul style="list-style-type: none; margin: 0; padding: 0; display: flex;">
+                <li style="display: inline;">
+                    <a href="index.html" style="color: white; text-decoration: none; padding: 10px;">Home</a>
+                </li>
+                <li style="display: inline;">
+                    <a href="about.html" style="color: white; text-decoration: none; padding: 10px;">About Us</a>
+                </li>
+                <li style="display: inline;">
+                    <a href="gallery.html" style="color: white; text-decoration: none; padding: 10px;">Gallery</a>
+                </li>
+                <li style="display: inline;">
+                    <a href="menu.html" style="color: white; text-decoration: none; padding: 10px;">Menu</a>
+                </li>
+                <li style="display: inline;">
+                    <a href="contact.html" style="color: white; text-decoration: none; padding: 10px;">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        nav {
+            width: 100%;
+        }
+    
+        ul {
+            display: block;
+        }
+        
+        li {
+            display: block;
+            margin: 0;
+        }
+    }
+    </style>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="display-4" style="font-weight: bold; color: white;">Welcome to Chef24X7</h1>
+            <p class="lead">Experience global flavors at Chef24X7—savor Italian, Indian, Sri Lankan, and Chinese delights crafted to perfection.</p>
+            <a href="menu.html" class="btn btn-primary btn-lg">Explore Our Menu</a>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main class="container text-center my-5">
+        <h2 class="mb-4">Our Specialties</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <img src="images/foods/image1.jpg" class="card-img-top" alt="Specialty 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Dish 1</h5>
+                        <p class="card-text">Delicious and savory dish with the finest ingredients.</p>
+                        <a href="menu.html#dish1" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <img src="images/foods/image2.jpg" class="card-img-top" alt="Specialty 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Dish 2</h5>
+                        <p class="card-text">A perfect blend of flavors that will leave you craving more.</p>
+                        <a href="menu.html#dish2" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <img src="images/foods/image7.jpg" class="card-img-top" alt="Specialty 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dish 3</h5>
+                        <p class="card-text">A must-try dish for anyone who loves gourmet cuisine.</p>
+                        <a href="menu.html#dish3" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Testimonials Section -->
+        <section class="testimonial-section">
+            <div class="container">
+                <h2>Testimonials</h2>
+                <h2>What Our Guests Are Saying</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="testimonial-card">
+                            <img src="images/team/image.png" class="img-fluid rounded-circle mb-3" alt="Customer 1">
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-0">"Chef24X7 offers an unforgettable dining experience! The blend of flavors and impeccable service made our evening special."</p>
+                                <footer class="blockquote-footer">Emily Johnson <cite title="Source Title">Food Critic</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="testimonial-card">
+                            <img src="images/team/person1.jpg" class="img-fluid rounded-circle mb-3" alt="Customer 2">
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-0">"A true gem! The diverse menu and cozy atmosphere make Chef24X7 our go-to spot for both casual meals and special occasions."</p>
+                                <footer class="blockquote-footer">Michael Lee <cite title="Source Title">Regular Diner</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="service-card">
+                            <img src="images/services/image.png" class="img-fluid mb-3" alt="Service 1">
+                            <h5 class="card-title">Dine-In Experience</h5>
+                            <p class="card-text">Enjoy a warm and inviting atmosphere with exceptional service in our dining area.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="service-card">
+                            <img src="images/services/image13.jpg" class="img-fluid mb-3" alt="Service 2">
+                            <h5 class="card-title">Takeout & Delivery</h5>
+                            <p class="card-text">Order your favorite dishes for takeout or have them delivered right to your door.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="service-card">
+                            <img src="images/services/image14.jpg" class="img-fluid mb-3" alt="Service 3">
+                            <h5 class="card-title">Catering Services</h5>
+                            <p class="card-text">Let us cater your next event with a selection of our finest dishes, tailored to your needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.10/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Your custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
